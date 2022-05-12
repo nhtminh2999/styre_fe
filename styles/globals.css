@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-[2em] font-bold;
+  }
+  h2 {
+    @apply text-[1.5em] font-bold;
+  }
+  h3 {
+    @apply text-[1.17em] font-bold;
+  }
+  h4 {
+    @apply font-bold;
+  }
+  h5 {
+    @apply text-[0.83em] font-bold;
+  }
+  h6 {
+    @apply text-[0.67em] font-bold;
+  }
+
+  body {
+    @apply font-poppins text-sm leading-normal;
+  }
+}
+
+@layer components {
+  .login-form .login-form__input,
+  .register-form .register-form__input {
+    @apply py-2 rounded placeholder:text-black/70;
+  }
+  .login-form .login-form__input input::placeholder,
+  .register-form .register-form__input input::placeholder {
+    @apply text-black/70;
+  }
+
+  .project-list .ant-table-thead tr .ant-table-cell {
+    @apply bg-white py-1 px-2 border-b-2 border-solid border-[#DFE1E6] text-[12px] before:hidden;
+  }
+  .project-list .ant-table-tbody tr .ant-table-cell {
+    @apply bg-white py-3 px-2 border-b-2 border-solid border-[#DFE1E6];
+  }
+  .project-list .ant-table-column-sorters {
+    @apply justify-start;
+  }
+  .project-list .ant-table-column-sorters .ant-table-column-title {
+    @apply flex-none;
+  }
+}
+
+.ant-menu-submenu-title {
+  padding: 0 !important;
+}
