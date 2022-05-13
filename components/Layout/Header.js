@@ -39,14 +39,13 @@ function Header() {
       <div className="flex justify-between items-center px-4 relative h-14">
         <nav className="flex justify-between items-center h-full">
           <div className="relative h-8 w-8 mr-6">
-            <Link href="/styre/your-work">
+            <Link href="/styre/project">
               <a className="relative block w-full h-full">
                 <Image src="/favicon.ico" alt="Styre logo" layout="fill" objectFit="scale-down" priority />
               </a>
             </Link>
           </div>
           <div className="flex justify-between items-center space-x-6 h-full">
-            <HeaderLink path="/styre/your-work" title="Your work" />
             <HeaderLink path="/styre/project" title="Project" />
           </div>
         </nav>

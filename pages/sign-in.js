@@ -24,13 +24,13 @@ function SignIn() {
       setLoading(false)
 
       if (data && data.message !== 'SUCCESS') openErrorNotification({ description: data.error })
-      else router.push('/styre/your-work')
+      else router.push('/styre/project')
     } catch (error) {
       // TO DO
     }
   }
 
-  if (data && data?.message === 'SUCCESS') router.replace('/styre/your-work')
+  if (data && data?.message === 'SUCCESS') router.replace('/styre/project')
 
   return (
     <>

@@ -16,6 +16,8 @@ function Sidebar({ name }) {
           fontWeight: '600',
           marginBottom: '15px'
         }}
+        defaultOpenKeys={['planning']}
+        defaultSelectedKeys={['board']}
       >
         <Menu.SubMenu title="Planning" key="planning">
           <Menu.Item icon={<TableOutlined />} key="board" className="font-normal" style={{ padding: '10px' }}>
